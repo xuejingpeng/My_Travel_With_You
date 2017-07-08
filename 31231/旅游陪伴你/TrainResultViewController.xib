@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrainResultViewController">
+            <connections>
+                <outlet property="isData" destination="C0u-Xq-qvw" id="auS-Bj-usU"/>
+                <outlet property="tableView" destination="rlg-0g-Z7H" id="mpJ-Qz-Agb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-0g-Z7H">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BKU-gg-E43"/>
+                        <outlet property="delegate" destination="-1" id="4Vg-Ov-tjZ"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0u-Xq-qvw">
+                    <rect key="frame" x="114" y="270.5" width="92" height="27.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" red="0.6645343293" green="0.37356302889999998" blue="0.81853318249999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rlg-0g-Z7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4dM-mp-ca2"/>
+                <constraint firstItem="C0u-Xq-qvw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4eg-0M-OiH"/>
+                <constraint firstAttribute="bottom" secondItem="rlg-0g-Z7H" secondAttribute="bottom" id="Tzv-gR-JL8"/>
+                <constraint firstItem="C0u-Xq-qvw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iIK-xN-PMK"/>
+                <constraint firstItem="rlg-0g-Z7H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mfh-95-XbO"/>
+                <constraint firstAttribute="trailing" secondItem="rlg-0g-Z7H" secondAttribute="trailing" id="vlK-3E-Auh"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="57" y="272"/>
+        </view>
+    </objects>
+</document>

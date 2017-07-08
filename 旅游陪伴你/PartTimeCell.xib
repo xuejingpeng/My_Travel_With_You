@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="PartTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="厦门香格里拉服务队（包吃住）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAm-cI-F7Z">
+                        <rect key="frame" x="25" y="10" width="238" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9：00 ~ 12：00，13：00~18：00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv8-UD-Yi5">
+                        <rect key="frame" x="137" y="38" width="174" height="13.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.76063701920000004" green="0.76063701920000004" blue="0.76063701920000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j15-so-QgK">
+                        <rect key="frame" x="47" y="35" width="80" height="19.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100元/天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9B-Lz-bkW">
+                        <rect key="frame" x="224.5" y="75.5" width="80.5" height="24"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.6645343293" green="0.37356302889999998" blue="0.81853318249999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市东城区安定门外大街185号304" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuN-lC-HIl">
+                        <rect key="frame" x="25" y="58" width="121.5" height="33.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.76063701920000004" green="0.76063701920000004" blue="0.76063701920000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="只限男生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VoY-O2-vDd">
+                        <rect key="frame" x="156.5" y="66.5" width="60" height="18"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.6645343293" green="0.37356302889999998" blue="0.81853318249999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="XuN-lC-HIl" firstAttribute="top" secondItem="j15-so-QgK" secondAttribute="bottom" constant="3.5" id="0y6-LQ-znH"/>
+                    <constraint firstAttribute="trailing" secondItem="G9B-Lz-bkW" secondAttribute="trailing" constant="15" id="ICW-jx-cPa"/>
+                    <constraint firstItem="yAm-cI-F7Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="JpK-60-KWT"/>
+                    <constraint firstAttribute="bottom" secondItem="G9B-Lz-bkW" secondAttribute="bottom" constant="15" id="Z9L-cE-HOH"/>
+                    <constraint firstAttribute="trailing" secondItem="tv8-UD-Yi5" secondAttribute="trailing" constant="8.5" id="ciR-ig-8vB"/>
+                    <constraint firstItem="tv8-UD-Yi5" firstAttribute="top" secondItem="yAm-cI-F7Z" secondAttribute="bottom" constant="7.5" id="dnf-gn-oti"/>
+                    <constraint firstItem="j15-so-QgK" firstAttribute="centerY" secondItem="tv8-UD-Yi5" secondAttribute="centerY" id="f6X-bt-MhX"/>
+                    <constraint firstItem="tv8-UD-Yi5" firstAttribute="leading" secondItem="j15-so-QgK" secondAttribute="trailing" constant="10" id="gsT-be-gUt"/>
+                    <constraint firstItem="VoY-O2-vDd" firstAttribute="centerY" secondItem="XuN-lC-HIl" secondAttribute="centerY" id="iwk-mQ-iBb"/>
+                    <constraint firstItem="XuN-lC-HIl" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.38" id="j9A-8Z-Nzp"/>
+                    <constraint firstItem="VoY-O2-vDd" firstAttribute="leading" secondItem="XuN-lC-HIl" secondAttribute="trailing" constant="10" id="pmG-X8-Pby"/>
+                    <constraint firstItem="XuN-lC-HIl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="vr6-nG-nnK"/>
+                    <constraint firstItem="yAm-cI-F7Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zfL-36-PvQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="address" destination="XuN-lC-HIl" id="anS-AF-Nah"/>
+                <outlet property="gender" destination="VoY-O2-vDd" id="0cI-GO-zJC"/>
+                <outlet property="title" destination="yAm-cI-F7Z" id="8xv-m0-Uch"/>
+                <outlet property="treament" destination="G9B-Lz-bkW" id="XKS-iw-n14"/>
+                <outlet property="workTime" destination="tv8-UD-Yi5" id="Spw-S0-GYd"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="292.5"/>
+        </tableViewCell>
+    </objects>
+</document>

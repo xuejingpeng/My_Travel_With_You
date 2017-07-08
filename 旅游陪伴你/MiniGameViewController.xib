@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MiniGameViewController">
+            <connections>
+                <outlet property="tomImageView" destination="Thn-eY-C94" id="Hy8-Qa-dI7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angry_00.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Thn-eY-C94">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQL-4O-ArP" userLabel="footRight">
+                    <rect key="frame" x="157" y="511" width="48" height="40.5"/>
+                    <animations/>
+                    <connections>
+                        <action selector="footRight:" destination="-1" eventType="touchUpInside" id="afQ-ZM-kKi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63n-sf-fPU" userLabel="scratch">
+                    <rect key="frame" x="247" y="482" width="60" height="60"/>
+                    <animations/>
+                    <state key="normal" image="scratch" backgroundImage="eat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="scratch:" destination="-1" eventType="touchUpInside" id="xqg-LW-HoH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-g9-vh7" userLabel="pie">
+                    <rect key="frame" x="247" y="417" width="60" height="60"/>
+                    <animations/>
+                    <state key="normal" image="pie" backgroundImage="eat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pieOnClick:" destination="-1" eventType="touchUpInside" id="GyF-qZ-FbV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKm-bS-bUg" userLabel="drink">
+                    <rect key="frame" x="247" y="352" width="60" height="60"/>
+                    <animations/>
+                    <state key="normal" image="drink" backgroundImage="eat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="drinkOnClick:" destination="-1" eventType="touchUpInside" id="2b4-NP-3KH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL6-Ix-mwa" userLabel="fart">
+                    <rect key="frame" x="13" y="482" width="60" height="60"/>
+                    <animations/>
+                    <state key="normal" backgroundImage="fart">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fartOnClick:" destination="-1" eventType="touchUpInside" id="fyg-QJ-5S3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9S-bE-JuP" userLabel="cymbal">
+                    <rect key="frame" x="13" y="417" width="60" height="60"/>
+                    <animations/>
+                    <state key="normal" backgroundImage="cymbal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cymbalOnClick:" destination="-1" eventType="touchUpInside" id="sgY-zk-muT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aET-cZ-73D">
+                    <rect key="frame" x="56" y="146" width="208" height="176.5"/>
+                    <animations/>
+                    <state key="normal" title="knockout">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="knockoutOnClick:" destination="-1" eventType="touchUpInside" id="j1q-Y5-W1O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqT-nH-s2T" userLabel="eat">
+                    <rect key="frame" x="13" y="352" width="60" height="60"/>
+                    <animations/>
+                    <state key="normal" backgroundImage="eat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="eatOnClick:" destination="-1" eventType="touchUpInside" id="LNL-mq-iHu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yx-X0-dk6" userLabel="footLeft">
+                    <rect key="frame" x="104" y="511" width="48" height="40.5"/>
+                    <animations/>
+                    <connections>
+                        <action selector="footLeft:" destination="-1" eventType="touchUpInside" id="ckb-dA-d8f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bc-yc-IIG" userLabel="stomach">
+                    <rect key="frame" x="104" y="427" width="112" height="75.5"/>
+                    <animations/>
+                    <connections>
+                        <action selector="stomachOnClick:" destination="-1" eventType="touchUpInside" id="dTM-Q9-9F5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzo-92-hrz" userLabel="angry">
+                    <rect key="frame" x="104" y="336" width="112" height="90.5"/>
+                    <animations/>
+                    <connections>
+                        <action selector="angryOnClick:" destination="-1" eventType="touchUpInside" id="nM9-Jv-PxE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aET-cZ-73D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="146" id="5ge-Mo-EeI"/>
+                <constraint firstItem="aET-cZ-73D" firstAttribute="centerX" secondItem="Thn-eY-C94" secondAttribute="centerX" id="6i8-pz-o9x"/>
+                <constraint firstItem="GL6-Ix-mwa" firstAttribute="top" secondItem="Q9S-bE-JuP" secondAttribute="bottom" constant="5" id="76x-Hj-TCk"/>
+                <constraint firstAttribute="trailing" secondItem="Thn-eY-C94" secondAttribute="trailing" id="8Eb-E8-jbZ"/>
+                <constraint firstItem="3bc-yc-IIG" firstAttribute="width" secondItem="Thn-eY-C94" secondAttribute="width" multiplier="0.35" id="9jN-kV-1zl"/>
+                <constraint firstItem="XKm-bS-bUg" firstAttribute="centerY" secondItem="XqT-nH-s2T" secondAttribute="centerY" id="AR6-CD-n9u"/>
+                <constraint firstItem="XqT-nH-s2T" firstAttribute="top" secondItem="aET-cZ-73D" secondAttribute="bottom" constant="30" id="BBG-M0-0UG"/>
+                <constraint firstItem="3bc-yc-IIG" firstAttribute="top" secondItem="xzo-92-hrz" secondAttribute="bottom" id="CqZ-oO-xBt"/>
+                <constraint firstItem="JQL-4O-ArP" firstAttribute="height" secondItem="6yx-X0-dk6" secondAttribute="height" id="D7L-hs-CSG"/>
+                <constraint firstItem="6yx-X0-dk6" firstAttribute="height" secondItem="Thn-eY-C94" secondAttribute="height" multiplier="0.08" id="Hge-0G-ftr"/>
+                <constraint firstItem="3bc-yc-IIG" firstAttribute="centerX" secondItem="Thn-eY-C94" secondAttribute="centerX" id="J5a-P1-kLH"/>
+                <constraint firstItem="3bc-yc-IIG" firstAttribute="height" secondItem="Thn-eY-C94" secondAttribute="height" multiplier="0.15" id="KUO-t3-8PY"/>
+                <constraint firstItem="xzo-92-hrz" firstAttribute="width" secondItem="Thn-eY-C94" secondAttribute="width" multiplier="0.35" id="Oz3-od-bPp"/>
+                <constraint firstItem="XqT-nH-s2T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="POi-VK-kLZ"/>
+                <constraint firstItem="Thn-eY-C94" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="WCc-fg-VqB"/>
+                <constraint firstItem="aET-cZ-73D" firstAttribute="width" secondItem="Thn-eY-C94" secondAttribute="width" multiplier="0.65" id="Yhk-X3-0yP"/>
+                <constraint firstAttribute="trailing" secondItem="XKm-bS-bUg" secondAttribute="trailing" constant="13" id="Z1W-ve-6Bu"/>
+                <constraint firstItem="GL6-Ix-mwa" firstAttribute="centerX" secondItem="Q9S-bE-JuP" secondAttribute="centerX" id="aWM-dO-Zjg"/>
+                <constraint firstItem="Q9S-bE-JuP" firstAttribute="centerX" secondItem="XqT-nH-s2T" secondAttribute="centerX" id="bHy-N1-ya0"/>
+                <constraint firstItem="Q9S-bE-JuP" firstAttribute="top" secondItem="XqT-nH-s2T" secondAttribute="bottom" constant="5" id="bcB-Fb-ShD"/>
+                <constraint firstItem="qh0-g9-vh7" firstAttribute="centerX" secondItem="XKm-bS-bUg" secondAttribute="centerX" id="cb3-Uf-sPL"/>
+                <constraint firstItem="aET-cZ-73D" firstAttribute="height" secondItem="Thn-eY-C94" secondAttribute="height" multiplier="0.35" id="j5b-2L-1ti"/>
+                <constraint firstItem="6yx-X0-dk6" firstAttribute="width" secondItem="Thn-eY-C94" secondAttribute="width" multiplier="0.15" id="jK0-I6-6a4"/>
+                <constraint firstItem="JQL-4O-ArP" firstAttribute="centerY" secondItem="6yx-X0-dk6" secondAttribute="centerY" id="jLm-pq-wic"/>
+                <constraint firstAttribute="bottom" secondItem="Thn-eY-C94" secondAttribute="bottom" id="kUz-vR-8hA"/>
+                <constraint firstItem="JQL-4O-ArP" firstAttribute="leading" secondItem="6yx-X0-dk6" secondAttribute="trailing" constant="5" id="mz6-O6-EIb"/>
+                <constraint firstItem="Thn-eY-C94" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nC7-Ah-SuB"/>
+                <constraint firstItem="6yx-X0-dk6" firstAttribute="top" secondItem="3bc-yc-IIG" secondAttribute="bottom" constant="8" id="nxE-09-TaK"/>
+                <constraint firstItem="xzo-92-hrz" firstAttribute="height" secondItem="Thn-eY-C94" secondAttribute="height" multiplier="0.18" id="onA-rh-WPK"/>
+                <constraint firstItem="6yx-X0-dk6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.8" id="rZz-aA-UGJ"/>
+                <constraint firstItem="xzo-92-hrz" firstAttribute="centerX" secondItem="Thn-eY-C94" secondAttribute="centerX" id="tiS-gQ-s1u"/>
+                <constraint firstItem="JQL-4O-ArP" firstAttribute="width" secondItem="6yx-X0-dk6" secondAttribute="width" id="uUy-pW-ecF"/>
+                <constraint firstItem="63n-sf-fPU" firstAttribute="centerX" secondItem="qh0-g9-vh7" secondAttribute="centerX" id="wUE-zV-Mkq"/>
+                <constraint firstItem="qh0-g9-vh7" firstAttribute="top" secondItem="XKm-bS-bUg" secondAttribute="bottom" constant="5" id="x1h-Aw-ISc"/>
+                <constraint firstItem="63n-sf-fPU" firstAttribute="top" secondItem="qh0-g9-vh7" secondAttribute="bottom" constant="5" id="zeO-Fc-PkS"/>
+                <constraint firstAttribute="bottom" secondItem="6yx-X0-dk6" secondAttribute="bottom" constant="16" id="zfs-eD-L8M"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="angry_00.jpg" width="640" height="1024"/>
+        <image name="cymbal" width="60" height="60"/>
+        <image name="drink" width="60" height="60"/>
+        <image name="eat" width="60" height="60"/>
+        <image name="fart" width="60" height="60"/>
+        <image name="pie" width="60" height="60"/>
+        <image name="scratch" width="60" height="60"/>
+    </resources>
+</document>

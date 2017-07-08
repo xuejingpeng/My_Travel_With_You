@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PartTimeListViewController">
+            <connections>
+                <outlet property="tableView" destination="3ra-tb-kS2" id="XOi-fs-6JO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3ra-tb-kS2">
+                    <rect key="frame" x="0.0" y="33" width="320" height="535"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xvw-Xh-zva"/>
+                        <outlet property="delegate" destination="-1" id="kaD-ON-F3Y"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3ra-tb-kS2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Oy-kg-6re"/>
+                <constraint firstItem="3ra-tb-kS2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="Pjv-Q2-yYj"/>
+                <constraint firstAttribute="bottom" secondItem="3ra-tb-kS2" secondAttribute="bottom" id="ulm-fA-s9W"/>
+                <constraint firstAttribute="trailing" secondItem="3ra-tb-kS2" secondAttribute="trailing" id="xbP-rW-Ks9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="113" y="335"/>
+        </view>
+    </objects>
+</document>

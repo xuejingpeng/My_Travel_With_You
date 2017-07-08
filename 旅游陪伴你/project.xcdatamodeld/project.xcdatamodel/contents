@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="User" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userShip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UserInformation" inverseName="userInformationShip" inverseEntity="UserInformation" syncable="YES"/>
+    </entity>
+    <entity name="UserInformation" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="netName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="userInformationShip" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="User" inverseName="userShip" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="UserTrip" syncable="YES">
+        <attribute name="accommodationBeginData" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="accommodationEndData" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="accommodationLat" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="accommodationLng" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="accommodationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="scenicName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainBeginData" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trainDepartureStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trainEndData" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="trainTerminus" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-54" positionY="-9" width="128" height="88"/>
+        <element name="UserInformation" positionX="223" positionY="-27" width="128" height="118"/>
+        <element name="UserTrip" positionX="61" positionY="135" width="128" height="210"/>
+    </elements>
+</model>

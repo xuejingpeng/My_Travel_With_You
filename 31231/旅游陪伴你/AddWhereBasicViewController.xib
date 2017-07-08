@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWhereBasicViewController">
+            <connections>
+                <outlet property="cityName" destination="Uif-g4-yTz" id="eJg-NE-cr0"/>
+                <outlet property="date" destination="ilF-KY-ZwN" id="Vhh-mY-Xgt"/>
+                <outlet property="titleText" destination="zQm-pp-HYB" id="YlL-gd-DUl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="行程名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQm-pp-HYB">
+                    <rect key="frame" x="10" y="80" width="300" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uif-g4-yTz">
+                    <rect key="frame" x="170" y="125.5" width="130" height="45.5"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.99443108970000005" green="0.99443108970000005" blue="0.99443108970000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="旅游的城市"/>
+                    <connections>
+                        <action selector="city:" destination="-1" eventType="touchUpInside" id="kDS-YD-BKJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilF-KY-ZwN">
+                    <rect key="frame" x="20" y="125" width="130" height="45.5"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.99443108970000005" green="0.99443108970000005" blue="0.99443108970000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="出发日期"/>
+                    <connections>
+                        <action selector="date:" destination="-1" eventType="touchUpInside" id="sSp-WB-MNb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.92716346153846152" green="0.92716346153846152" blue="0.92716346153846152" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zQm-pp-HYB" secondAttribute="trailing" constant="10" id="4tj-mI-9XY"/>
+                <constraint firstItem="Uif-g4-yTz" firstAttribute="height" secondItem="ilF-KY-ZwN" secondAttribute="height" id="BUc-rs-5Vy"/>
+                <constraint firstItem="Uif-g4-yTz" firstAttribute="width" secondItem="ilF-KY-ZwN" secondAttribute="width" id="F8j-re-6ze"/>
+                <constraint firstAttribute="trailing" secondItem="ilF-KY-ZwN" secondAttribute="trailing" constant="170" id="NQy-Fe-gxg"/>
+                <constraint firstAttribute="trailing" secondItem="Uif-g4-yTz" secondAttribute="trailing" constant="20" id="c4c-Us-pkD"/>
+                <constraint firstItem="Uif-g4-yTz" firstAttribute="centerY" secondItem="ilF-KY-ZwN" secondAttribute="centerY" id="mAK-IN-ZZw"/>
+                <constraint firstItem="ilF-KY-ZwN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="n4g-FR-4mD"/>
+                <constraint firstItem="zQm-pp-HYB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="tya-B6-BzC"/>
+                <constraint firstItem="ilF-KY-ZwN" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.08" id="xHV-Pm-Jtx"/>
+                <constraint firstItem="zQm-pp-HYB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="xen-fr-0Nt"/>
+                <constraint firstItem="ilF-KY-ZwN" firstAttribute="top" secondItem="zQm-pp-HYB" secondAttribute="bottom" constant="15" id="zkq-kW-YsC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="131" y="234"/>
+        </view>
+    </objects>
+</document>
